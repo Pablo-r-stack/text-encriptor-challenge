@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Challenge text-Encryptor</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">A</div>
+        <ul>
+            <li>
+                <button id="about">?</button>
+            </li>
+            <li>
+                <div class="language-selector">
+                    <a href="#" id="language" class="language">
+                        <img src="" alt="flag icon">
+                        <img src="/img/bottom.svg" alt=" btm icon">
+                    </a>
+                    <ul id="languages" class="languages">
+                        <li class="lang-option">
+                            <a href="#">
+                                <img src="/img/flag/es.png" alt="flag icon">
+                                <span>Es</span>
+                            </a>
+                        </li>
+                        <li class="lang-option">
+                            <a href="#">
+                                <img src="/img/flag/pt.png" alt="flag icon">
+                                <span>Pt</span>
+                            </a>
+                        </li>
+                        <li class="lang-option">
+                            <a href="#">
+                                <img src="/img/flag/eng.png" alt="flag icon">
+                                <span>ENG</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 id="tittle">Encriptador de texto</h1>
+    </header>
+    <main>
+        <section>
+            <div class="console">
+                <div class="screen">
+                    <div class="dig-screen">
+                        <textarea id="messageInput"></textarea>
+                    </div>
+                    <div class="char-container">
+                        <textarea id="dialog-char" disabled></textarea>
+                        <img src="/img/pngfind.com-professor-oak-png-6751482.png" id="char" alt="char">
+                    </div>
+                    <div class="dig-screen">
+                        <textarea id="encodedMessage" disabled></textarea>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <button class="btn-l" id="encodeButton"></button>
+                    <button class="btn-l" id="decodeButton"></button>
+                    <button class="btn-l" id="copyButton"></button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-info">
+                <p>2024-Developed by Pablo Velasco</p>
+            </div>
+            <div class="social-media">
+                <p>Social Media:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/pablo-r-velasco/"><img src="/img/linkd.png" alt="linkedin icon"></a></li>
+                    <li><a href="https://github.com/Pablo-r-stack"><img src="/img/github.png" alt="github icon"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+<script type="module" src="/index.js"></script>
+</html>

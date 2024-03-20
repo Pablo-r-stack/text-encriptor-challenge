@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Global styles, add here to apply all */
+:root {
+    --font: "Press Start 2P", system-ui;
+    --colorOne: #081820;
+    --colorTwo: #346856;
+    --colorTrhee: #88C070;
+    --colorFour: #E0F8D0;
+    --colorBtn: #D9D9D9;
+}
+
+
+body,
+textarea,
+button {
+    font-family: var(--font);
+}
+
+nav {
+
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 64px;
+    color: #D9D9D9;
+    /* Color del texto */
+    width: 60px;
+    text-shadow:
+        -2px -2px 0 #081820,
+        2px -2px 0 #081820,
+        -2px 2px 0 #081820,
+        2px 2px 0 #081820;
+    /* Agrega sombras con desplazamiento para imitar el delineado */
+    transition: all 1s;
+    margin: 10px;
+}
+
+.logo:hover {
+    color: #081820;
+    font-size: 20px;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+nav ul,
+ul li {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+}
+
+#about {
+    height: auto;
+    width: 30px;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+#about:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/*flag selector*/
+
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 95%;
+    margin: auto;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    position: relative;
+}
+
+.language:hover {
+    background-color: rgb(228, 228, 228);
+
+}
+
+.language-selector ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.language-selector a {
+    text-decoration: none;
+}
+
+.language-selector img {
+    width: 15px;
+    height: 15px;
+}
+
+.languages {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.languages li {
+    width: 100%;
+}
+
+.languages li a {
+    display: block;
+    padding: 10px;
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+}
+
+.languages li a:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+/*Toggle - js*/
+.toggle {
+    visibility: visible;
+}
+
+header {
+    margin: 30px 100px 0 100px;
+}
+
+section {
+    display: flex;
+    width: 80%;
+    margin: 0 100px;
+    padding: 30px 100px;
+    height: 600px;
+    justify-content: center;
+}
+
+.console {
+    display: flex;
+    flex-direction: column;
+    background-color: #338D08;
+    box-shadow: 0 0 10px #000000;
+    width: 900px;
+    height: 600px;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+.screen {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 30px #000000;
+    border-bottom: 60px solid;
+    height: 400px;
+    width: 700px;
+    background-color: var(--colorFour);
+    padding: 30px;
+}
+
+.dig-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    border: solid 20px var(--colorOne);
+    border-radius: 10px;
+    background-color: var(--colorTrhee);
+    box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dig-screen textarea {
+    align-self: center;
+    color: var(--colorOne);
+    background-color: var(--colorTrhee);
+    caret-color: var(--colorTwo);
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding-top: 30px;
+    justify-content: center;
+    outline: none;
+    resize: none;
+}
+
+.char-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    justify-content: end;
+    align-items: center;
+}
+
+#dialog-char {
+    font-size: 10px;
+    text-align: center;
+    color: var(--colorTwo);
+    width: 110px;
+    height: auto;
+    padding: 5px;
+    line-height: 1.5;
+    background-color: var(--colorFour);
+    border: 3px dotted var(--colorOne);
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#char {
+    width: 50px;
+    height: auto;
+    box-shadow: 0 2px #000000;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    align-self: center;
+}
+
+.btn-l {
+    padding: 10px;
+    width: 200px;
+    background-color: var(--colorBtn);
+}
+
+.btn-l:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra horizontalmente el contenido */
+    margin-top: 100px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.social-media {
+    margin-top: 10px;
+    /* Agrega un espacio entre el contenido principal y el de las redes sociales */
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-inline-start: 10px;
+}
+
+.social-media img {
+    width: 20px;
+    height: auto;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 481px) and (max-width: 920px) {
+    nav {
+        height: 50px;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    .logo {
+        font-size: 48px;
+        width: 40px;
+        margin: 5px;
+    }
+
+    .logo:hover {
+        font-size: 15px;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 30px;
+        margin: 10px;
+        align-items: center;
+        display: block;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    main {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 5px;
+        margin: 10px;
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .console {
+        width: 90%;
+        height: auto;
+    }
+
+    .screen {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .dig-screen {
+        width: 70%;
+        height: 40%;
+        border: solid 5px var(--colorOne);
+    }
+
+    .dig-screen textarea {
+        font-size: 15px;
+    }
+
+    .char-container {
+        min-height: 150px;
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px;
+    }
+
+    #dialog-char {
+        font-size: 8px;
+    }
+
+    .btn-row {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .btn-l {
+        width: 80%;
+        text-transform: none;
+    }
+
+    .btn-l:active {
+        text-transform: uppercase;
+        transition: text-transform 1s;
+    }
+
+    footer {
+        margin-top: 10px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        height: 50px;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    .logo {
+        font-size: 48px;
+        width: 40px;
+        margin: 5px;
+    }
+
+    .logo:hover {
+        font-size: 15px;
+    }
+
+    header {
+        width: 100%;
+        height: 30px;
+        margin: 10px;
+        align-items: center;
+        display: block;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    main {
+        height: 90vh;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 5px;
+        margin: 10px;
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .console {
+        width: 400px;
+        height: auto;
+    }
+
+    .screen {
+        flex-direction: column;
+        width: 65%;
+        height: 400px;
+    }
+
+    .dig-screen {
+        width: 220px;
+        height: 120px;
+        border: solid 5px var(--colorOne);
+    }
+
+    .dig-screen textarea {
+        font-size: 10px;
+    }
+
+    .char-container {
+        min-height: 100px;
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px;
+    }
+
+    #dialog-char {
+        font-size: 8px;
+    }
+
+    .btn-row {
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+
+    .btn-l {
+        width: 300px;
+        text-transform: none;
+    }
+
+    .btn-l:active {
+        text-transform: uppercase;
+        transition: text-transform 1s;
+    }
+
+    footer {
+        margin: 0;
+        font-size: 8px;
+    }
+}
