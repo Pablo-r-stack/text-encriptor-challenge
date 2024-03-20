@@ -14,6 +14,7 @@ const { [0]: es, [1]: eng, [2]: pt } = translations;
 let errorMsg = '';
 let charMsg= {};
 let aboutMsg='';
+let typingInterval;
 //events
 about.addEventListener('click', ()=>{
     alert(aboutMsg);
@@ -60,16 +61,17 @@ logo.addEventListener('mouseleave', function(){
 });
 //typing function:
 function typeText(element, text, interval) {
+    clearInterval(typingInterval); // Detener el intervalo anterior, si existe
     const typedText = [];
     let i = 0;
 
-    const typingInterval = setInterval(() => {
+    typingInterval = setInterval(() => {
         typedText.push(text[i]);
         element.textContent = typedText.join('');
         i++;
 
         if (i === text.length) {
-            clearInterval(typingInterval);
+            clearInterval(typingInterval); // Detener el intervalo una vez que se haya escrito todo el texto
         }
     }, interval);
 }
@@ -138,8 +140,7 @@ function validate(text){
  * o = ober
  * u = ufat
  * 
- * solo minusculas
- * no caracteres especiales ni acentos
+ * only minus, no numbers or special characters
  */
 
 //language events

@@ -7,7 +7,7 @@ export const translations = [
         btnEncode: 'encriptar',
         btnDecode: 'desencriptar',
         btnCopy: 'copiar',
-        errorMsg: 'Se encontraron Caracteres ilegales, intenta de nuevo',
+        errorMsg: 'Se encontraron Caracteres ilegales, intenta de nuevo. (no se permiten mayusculas, numeros o caracteres especiales)',
         aboutMsg: 'Este desafío forma parte del proceso formativo del programa ONE #G6  de Alura LATAM y Oracle. Todo el contenido fue desarrollado con fines educativos. Si te gustó, puedes contactarme haciendo click en los links a mis redes sociales ubicados debajo.',
         charMsg: {
             welcome: 'Bienvenido a nuestro encriptador',
@@ -25,7 +25,7 @@ export const translations = [
         btnEncode: 'encrypt',
         btnDecode: 'decrypt',
         btnCopy: 'copy',
-        errorMsg: 'Illegal characters found, please try again',
+        errorMsg: 'Illegal characters found, please try again. (no Mayus, numbers or special characters allowed)',
         aboutMsg: 'This challenge is part of the Alura LATAM & Oracle ONE #G6 formation program. All the content was developed for educational purposes. If you liked it, you can contact me below by clicking my social media links.',
         charMsg: {
             welcome: 'Welcome to our encryptor',
@@ -43,7 +43,7 @@ export const translations = [
         btnEncode: 'codificar',
         btnDecode: 'cecodificar',
         btnCopy: 'copiar',
-        errorMsg: 'Caracteres ilegais encontrados, por favor, tente novamente',
+        errorMsg: 'Caracteres ilegais encontrados, por favor, tente novamente. (não são permitidos maiúsculas, números ou caracteres especiais)',
         aboutMsg: 'Este desafio faz parte do processo formativo do programa ONE #G6 da Alura LATAM e Oracle. Todo o conteúdo foi desenvolvido com fins educativos. Se você gostou, pode entrar em contato comigo clicando nos links das minhas redes sociais abaixo',
         charMsg: {
             welcome: 'Bem-vindo ao nosso criptografador',
