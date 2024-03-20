@@ -163,7 +163,7 @@ optionsArray.forEach((option)=>{
 })
 
 function setLang(lang){
-    actualLang.getElementsByTagName('img')[0].src = `/img/flag/${lang}.png`
+    actualLang.getElementsByTagName('img')[0].src = `img/flag/${lang}.png`
     lang == 'es' ? setContext(es) : lang == 'pt'? setContext(pt) : setContext(eng);
 }
 
